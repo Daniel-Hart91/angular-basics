@@ -1,21 +1,26 @@
 
 <!-- property binding to the disabled attribute - allowNewServer variable truthy/falsey -->
-<label>Server Name</label>
+<!-- <label>Server Name</label> -->
 <!-- <input type="text" 
 class="form-control"
 (input)='onUpdateServerName($event)'> -->
-<input type="text" 
-class="form-control" [(ngModel)]='serverName'>
-<p>{{serverName}}</p>
+<!-- <input type="text" 
+class="form-control" [(ngModel)]='serverName'> -->
+<!-- <p>{{serverName}}</p> -->
 <!-- (click) event added to button triggering the onCreatedServer method this is event binding-->
-<button class="btn btn-primary" 
+<!-- <button class="btn btn-primary" 
 [disabled]='!allowNewServer' 
 (click)='onCreateServer()'>
-Add new Server</button>
+Add new Server</button> -->
 <!-- binding the the paragraph innner text property to display weather allowNewServer is true or false -->
 <!-- <p [innerText]='allowNewServer'></p> -->
 <!--  -->
 
-<p>{{ serverCreationStatus }}</p>
+<!-- <p>{{ serverCreationStatus }}</p> -->
+
+
+<input type="text" [(ngModel)]='username'>
+<p>{{username}}</p>
+<button class="btn btn-success" [disabled]='!username' (click)='resetUsername()'>reset username</button>
 <app-server></app-server>
 <app-server></app-server>
