@@ -1,0 +1,11 @@
+
+<button (click)='toggleCode()'>Display detials</button>
+
+<p *ngIf='displayCode'>This is a secert code!</p>
+
+<p *ngFor='let click of buttonClicks'
+[ngStyle]='{backgroundColor: click >= 5 ? "blue" : "transparent"}'
+[ngClass]='{whiteText: click >= 5}'
+>
+{{click}}
+</p>
